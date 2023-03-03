@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    background: rgb(241, 241, 241);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -35,7 +36,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 a {
@@ -50,6 +52,16 @@ a:hover {
 img {
     max-width: 100%;
     width: auto;
+    object-fit: cover;
+}
+
+i {
+    font-size: 12px;
+    color: #0065FC;
+}
+
+i:nth-last-child(1) {
+    color: #F2F2F2;
 }
 
 section {
@@ -92,7 +104,8 @@ section {
 #content {
     width: 1440px;
     margin: auto;
-    padding-top: 50px;
+    padding: 50px 50px 0 50px;
+    background: #FFFFFF;
 }
 
 
@@ -112,6 +125,8 @@ section {
     font-size: 16px;
 }
 
+/* find your accommodation */
+
 #h2-header { 
     margin-top: 8px;
     font-size: 16px;
@@ -119,25 +134,58 @@ section {
     line-height: 19px;
 }
 
-header p:nth-of-type(1) {
-    margin-top: 32px;
+header div p {
     font-size: 18px;
     font-weight: 700;
+    margin-right: 35px;
 }
 
-header > ul {
-    margin-top: 32px;
+header div:nth-child(5) {
+    align-items: center;
+    margin-top: 46px;
+}
+
+header div ul {
     font-size: 17px;
     font-weight: 700;
 }
 
-header > ul li { 
+header div li { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 35px;
-    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
     height: 50px;
-    border: 1px solid #F2F2F2;
-    border-radius: 25px;
-    width: 200px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px; 
+}
+
+header div li:hover {
+    background: #DEEBFF;
+}
+
+
+
+header div li:nth-child(1) {
+    width: 175px;
+    height: 48px;
+}
+
+header div li:nth-child(2) {
+    width: 136px;
+    height: 48px;
+}
+
+header div li:nth-child(3) {
+    width: 172px;
+    height: 48px;
+}
+
+header div li:nth-child(4) {
+    width: 226px;
+    height: 48px;
 }
 
 header p:nth-of-type(2) {
@@ -146,12 +194,176 @@ header p:nth-of-type(2) {
     font-weight: 400;
 }
 
-#accommodation div article a figure img {
-    width: 246;
-    height: 124;
+header > p {
+    margin-top: 36px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
-/* find your accommodation */
+/* Accommodation in Marseille */
 
+#accommodation {
+    margin-top: 39px;
+    padding-top: 42px;
+    padding-bottom: 46px;
+    width: 880px;
+    height: 626px;
+    background: #F2F2F2;
+    border-radius: 20px;
+}
 
+#accommodation h2 {
+    width: 100%;
+    margin-left: 40px;
+}
 
+#accommodation h3 {
+    margin-top: 4px;
+}
+
+#accommodation h3, #accommodation p, #accommodation i:nth-child(1) {
+    margin-left: 16px;
+}
+
+#accommodation > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+#accommodation article {
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 246px;
+    height: 199px;
+}
+
+#accommodation article:nth-child(n+3){
+    margin-bottom: 30px;
+}
+
+#accommodation article:nth-child(3n+2){
+    margin-left: 31px;
+    margin-right: 31px;
+}
+
+#accommodation figure{
+    width: 246px;
+    height: 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accommodation img {
+    width: 236px;
+    height: 114px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#acommodation div p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#accommodation a {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* The most popular*/
+
+#popular {
+    margin-top: 39px;
+    margin-left: 40px;
+    padding-left: 37px;
+    padding-top: 41px;
+    padding-bottom: 34px;
+    width: 420px;
+    height: 625px;
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+#popular h2 {
+    margin-bottom: 26px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#popular article {
+    width: 343px;
+    height: 144px;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+#popular article:nth-child(3) {
+   margin: 33px 0;
+}
+
+#popular article a {
+     display: flex;
+}
+
+#popular article a > div {
+    padding-top: 16px;
+    padding-left: 15px;
+}
+
+#popular figure, 
+#popular img {
+    width: 127px;
+    height: 134px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#popular figure {
+    align-content: center;
+}
+/* activity */
+
+#activity div {
+    justify-content: space-between;
+}
+    
+#activity h2 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#activity article {
+    margin-top: 18.47px;
+    width: 302px;
+    height: 444.51px;
+    border-radius: 20px;
+    box-shadow: 0px 9px 16px 0px rgba(148,147,147,0.25);
+}
+
+#activity div article figure img{
+    width: 100%;
+    height: 389px;
+    border-radius: 20px 20px 0 0;
+}
+
+#activity h3 {
+    margin-top: 15px;
+    margin-left: 19px;
+}
+
+footer {
+    background: #F2F2F2;
+    max-width: 1339px;
+    height: 100%;
+    padding-top: 45px;
+    padding-bottom: 58px;
+    justify-content: space-around;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+footer li {
+    margin-bottom: 12px;
+}
