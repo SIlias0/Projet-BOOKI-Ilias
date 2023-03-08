@@ -22,8 +22,6 @@ h1, h2, h3, h4 {
 
 h1 {
     margin-top: 63px;
-    width: 575px;
-    height: 26px;
     left: 55px;
     top: 126px;
     font-weight: 700;
@@ -47,12 +45,6 @@ a {
 
 a:hover {
     color: #0065FC;
-}
-
-img {
-    max-width: 100%;
-    width: auto;
-    object-fit: cover;
 }
 
 i {
@@ -236,28 +228,18 @@ header > p {
     border-radius: 20px;
     width: 246px;
     height: 199px;
-}
-
-#accommodation article:nth-child(n+3){
-    margin-bottom: 30px;
-}
-
-#accommodation article:nth-child(3n+2){
-    margin-left: 31px;
-    margin-right: 31px;
+    margin: 20px;
 }
 
 #accommodation figure{
     width: 246px;
     height: 124px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #accommodation img {
-    width: 236px;
-    height: 114px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -266,7 +248,8 @@ header > p {
     font-size: 14px;
 }
 
-#accommodation a {
+#accommodation > a {
+    margin-left: 40px;
     font-weight: 700;
     font-size: 18px;
 }
@@ -292,14 +275,12 @@ header > p {
 }
 
 #popular article {
+    margin-bottom: 33px;
+    padding-right: 5px;
     width: 343px;
     height: 144px;
     border-radius: 20px;
     background: #FFFFFF;
-}
-
-#popular article:nth-child(3) {
-   margin: 33px 0;
 }
 
 #popular article a {
@@ -307,19 +288,22 @@ header > p {
 }
 
 #popular article a > div {
+    width: 206px;
     padding-top: 16px;
     padding-left: 15px;
 }
 
-#popular figure, 
-#popular img {
-    width: 127px;
-    height: 134px;
-    border-radius: 20px 0px 0px 20px;
+#popular figure {
+    width: 137px;
+    height: 144px;
+    
 }
 
-#popular figure {
-    align-content: center;
+#popular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
 }
 /* activity */
 
@@ -343,6 +327,7 @@ header > p {
 #activity div article figure img{
     width: 100%;
     height: 389px;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
@@ -366,4 +351,161 @@ footer h3 {
 
 footer li {
     margin-bottom: 12px;
+}
+
+@media screen and (max-width:1439px) {
+    #content {
+        width:100%;
+    }
+
+    #popular {
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 40px;
+        padding-right: 40px;
+        max-width: 880px;
+        width: 100%;
+        height: auto;
+    }
+
+    main > div {
+        flex-wrap: wrap;
+    } 
+
+    #popular > div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #popular article {
+        width: 252px;
+        margin-right: 10px;
+    }
+
+    #activity div {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #activity article {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    header div:nth-child(5) {
+        flex-wrap: wrap; 
+    }
+
+    header img {
+
+    }
+
+    header ul {
+        flex-wrap: wrap;
+    }
+
+    #accommodation {
+        height: auto;
+    }
+
+    #accommodation div {
+        justify-content: space-around;
+        align-items: space-around;
+    }
+
+    #popular {
+        background: #FFFFFF;
+    }
+
+    #popular article {
+        box-shadow: -1px 8px 41px 0px rgba(0,0,0,0.15);
+    }
+
+    footer nav {
+        width: 197px;
+        margin-right: 15px;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    footer {
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    
+}
+
+@media screen and (max-width:687px) {
+
+    #content {
+        padding: 0px 0px 0px 0px;
+    }
+
+    header {
+        padding: 40px;
+    }
+
+    #accommodation {
+        width: 100%;
+        border-radius: 0px;
+    }
+    #activity h2 {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    #popular div {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:434px) {
+
+    .btn-search {
+        min-width: 49px;
+        min-height: 49px;
+    }
+
+    .input-search {
+        width: 232px;
+    }
+}
+
+@media screen and (max-width:395px) {
+
+    header img {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translate( -50%, -50%);
+    }
+
+    #primary-nav ul {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    
+    #primary-nav ul li {
+        margin-top: 30px;
+    }
+
+    #primary-nav ul li a {
+        margin-left: 0px;
+    }
+
+    #popular > div {
+        justify-content: center;
+    }
+
+    footer nav {
+        width: auto;
+    }
 }
