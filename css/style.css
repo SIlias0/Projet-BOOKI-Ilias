@@ -341,6 +341,10 @@ header > p {
     width: 206px;
     padding-top: 16px;
     padding-left: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #popular figure {
@@ -449,7 +453,7 @@ footer li {
     header div:nth-child(5) {
         flex-wrap: wrap; 
     }
-    
+
     header ul {
         flex-wrap: wrap;
     }
